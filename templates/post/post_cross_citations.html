@@ -1,0 +1,9 @@
+{% if config.show_citations %}
+	{% for citation in post.cross_citations %}
+		{% if citation['board'] == citation['target_board'] %}
+			<a href="">&gt;&gt;&gt;{{citation['post']}}</a>
+		{% else %}
+			<a href="{{config['root']}}{{board['dir']}}{{config['dir']['res']}}{{citation['thread']}}.html#{{citation['post']}}">&gt;&gt;&gt;/{{citation['board']}}/{{citation['post']}}</a>
+		{% endif %}
+	{% endfor %}
+{% endif %}

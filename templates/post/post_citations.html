@@ -1,0 +1,5 @@
+{% if config.show_citations %}
+	{% for citation in post.citations %}
+		<a href="">&gt;&gt;{{citation['post']}}</a>
+	{% endfor %}
+{% endif %}
