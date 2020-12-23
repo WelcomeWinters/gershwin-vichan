@@ -79,21 +79,21 @@ $pages = array(
 	'/(\%b)/edit(_raw)?/(\d+)'		=> 'secure_POST edit_post',	// edit post
 	'/(\%b)/delete/(\d+)'			=> 'secure delete',		// delete post
 	'/(\%b)/deletefile/(\d+)/(\d+)'		=> 'secure deletefile',		// delete file from post
-	'/(\%b+)/spoiler/(\d+)/(\d+)'			=> 'secure spoiler_image',	// spoiler file
+	'/(\%b+)/spoiler/(\d+)/(\d+)'		=> 'secure spoiler_image',	// spoiler file
 	'/(\%b)/deletebyip/(\d+)(/global)?'	=> 'secure deletebyip',		// delete all posts by IP address
 	'/(\%b)/(un)?lock/(\d+)'		=> 'secure lock',		// lock thread
 	'/(\%b)/(un)?sticky/(\d+)'		=> 'secure sticky',		// sticky thread
-	'/(\%b)/(un)?cycle/(\d+)'                         => 'secure cycle',          // cycle thread
+	'/(\%b)/(un)?cycle/(\d+)'               => 'secure cycle',              // cycle thread
 	'/(\%b)/bump(un)?lock/(\d+)'		=> 'secure bumplock',		// "bumplock" thread
 	
 	'/themes'				=> 'themes_list',		// manage themes
-	'/themes/(\w+)'				=> 'secure_POST theme_configure',		// configure/reconfigure theme
-	'/themes/(\w+)/rebuild'			=> 'secure theme_rebuild',		// rebuild theme
-	'/themes/(\w+)/uninstall'		=> 'secure theme_uninstall',		// uninstall theme
+	'/themes/(\w+)'				=> 'secure_POST theme_configure',	// configure/reconfigure theme
+	'/themes/(\w+)/rebuild'			=> 'secure theme_rebuild',	// rebuild theme
+	'/themes/(\w+)/uninstall'		=> 'secure theme_uninstall',	// uninstall theme
 	
 	'/config'				=> 'secure_POST config',	// config editor
 	'/config/(\%b)'				=> 'secure_POST config',	// config editor
-	
+
 	// these pages aren't listed in the dashboard without $config['debug']
 	//'/debug/antispam'			=> 'debug_antispam',
 	//'/debug/recent'				=> 'debug_recent_posts',
