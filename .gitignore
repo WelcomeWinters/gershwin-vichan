@@ -1,4 +1,7 @@
 # add boards here
+b/
+mu/
+dev/
 
 # static html and json
 /*/*.html
