@@ -333,7 +333,9 @@
 	
 	// Ability to lock a board for normal users and still allow mods to post.  Could also be useful for making an archive board
 	$config['board_locked'] = false;
-
+        // Lock only new threads from being posted
+	$config['threads_locked'] = false;
+	
 	// If poster's proxy supplies X-Forwarded-For header, check if poster's real IP is banned.
 	$config['proxy_check'] = false;
 
