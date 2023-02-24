@@ -10,7 +10,7 @@
 /*/res
 /*/src
 /*/thumb
-/*/config.php
+/*/*config.php
 /*.html
 
 # include some files though
@@ -19,7 +19,6 @@
 
 # instance-config
 /inc/secrets.php
-/inc/instance-config.php
 
 # .installed
 /.installed
@@ -42,6 +41,7 @@ Thumbs.db
 *.orig
 *~
 *.xml
+robots.txt
 
 # tmp filesystem
 /tmp/cache/*
