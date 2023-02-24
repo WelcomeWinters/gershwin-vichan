@@ -288,7 +288,7 @@ if (isset($_POST['delete'])) {
 	if ((!isset($_POST['mod']) || !$_POST['mod']) && $config['board_locked']) {
    		error("Board is locked");
 	}
-	
+
 	// Check if banned
 	checkBan($board['uri']);
 	
@@ -370,6 +370,12 @@ if (isset($_POST['delete'])) {
 	if ((!isset($_POST['mod']) || !$_POST['mod']) && $config['board_locked']) {
     	error("Board is locked");
 	}
+
+        // Check if new threads are blocked
+        if (((!isset($_POST['mod']) || !$_POST['mod'])
+        && $config['threads_locked']) && !isset($_POST['thread'])) {
+                error("Posting threads is locked on this board. Please post a reply");
+        }
 	
 	if (!isset($_POST['name']))
 		$_POST['name'] = $config['anonymous'];

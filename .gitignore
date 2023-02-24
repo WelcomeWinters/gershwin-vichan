@@ -1,7 +1,8 @@
 # add boards here
-b/
-mu/
-dev/
+/b/
+/mu/
+/gg/
+/@/
 
 # static html and json
 /*/*.html
@@ -18,6 +19,7 @@ dev/
 
 # instance-config
 /inc/secrets.php
+/inc/instance-config.php
 
 # .installed
 /.installed
@@ -39,6 +41,7 @@ Thumbs.db
 *.rej
 *.orig
 *~
+*.xml
 
 # tmp filesystem
 /tmp/cache/*
@@ -49,5 +52,8 @@ Thumbs.db
 # vichan custom
 favicon.ico
 /static/spoiler.png
-
+/static/george*
 /vendor/
+
+# index page
+index.*
