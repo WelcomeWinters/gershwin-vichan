@@ -1,2 +1,5 @@
+Sitemap: https://georgegersh.win/sitemap.xml
+
 User-agent: *
 Disallow: /
+Allow:
