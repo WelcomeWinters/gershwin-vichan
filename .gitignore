@@ -1,3 +1,4 @@
+.gitignore
 # add boards here
 /b/
 /mu/
@@ -10,7 +11,7 @@
 /*/res
 /*/src
 /*/thumb
-/*/*config.php
+/*/config.php
 /*.html
 
 # include some files though
@@ -19,6 +20,7 @@
 
 # instance-config
 /inc/secrets.php
+/inc/instance-config.php
 
 # .installed
 /.installed
@@ -41,7 +43,8 @@ Thumbs.db
 *.orig
 *~
 *.xml
-robots.txt
+/robots.txt
+/install.php
 
 # tmp filesystem
 /tmp/cache/*
@@ -54,6 +57,7 @@ favicon.ico
 /static/spoiler.png
 /static/george*
 /vendor/
+/static/banners/*
 
 # index page
 index.*
