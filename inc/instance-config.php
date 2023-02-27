@@ -10,10 +10,10 @@
 
 
 	$config['db']['server'] = 'localhost';
-	$config['db']['database'] = 'gershwin';
+	$config['db']['database'] = '';
 	$config['db']['prefix'] = '';
-	$config['db']['user'] = 'lain';
-	$config['db']['password'] = 'LoudAnkleInnocentNine=';
+	$config['db']['user'] = '';
+	$config['db']['password'] = '';
 
         @include('inc/secrets.php');
 ?>
